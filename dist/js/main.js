@@ -11179,6 +11179,7 @@ var food = new _foodClass_js__WEBPACK_IMPORTED_MODULE_2__["default"]();
 food.initFood();
 var snake = new _snakeBuildClass__WEBPACK_IMPORTED_MODULE_1__["default"](food.x, food.y);
 snake.initSnake();
+gameTips.text('按空格键开始');
 
 window.onkeydown = function (e) {
   if (e.keyCode === 32) {
@@ -11286,38 +11287,14 @@ function random(min, max) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _css_main_less__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/main.less */ "./src/css/main.less");
-/* harmony import */ var _css_main_less__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_main_less__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _control_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./control.js */ "./src/js/control.js");
-/* harmony import */ var _judgePage_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./judgePage.js */ "./src/js/judgePage.js");
-
-
-
-Object(_judgePage_js__WEBPACK_IMPORTED_MODULE_2__["default"])();
-
-/***/ }),
-
-/***/ "./src/js/judgePage.js":
-/*!*****************************!*\
-  !*** ./src/js/judgePage.js ***!
-  \*****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return judgePage; });
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_main_less__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/main.less */ "./src/css/main.less");
+/* harmony import */ var _css_main_less__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_main_less__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _control_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./control.js */ "./src/js/control.js");
 
-var coverPage = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.cover-page');
-function judgePage() {
-  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).width() < 1200) {
-    coverPage.css('display', 'block');
-  } else {
-    coverPage.css('display', 'none');
-  }
-}
+
+
 
 /***/ }),
 
